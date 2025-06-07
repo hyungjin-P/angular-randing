@@ -1,0 +1,27 @@
+<div class="service-strategy-wrap">
+  <swiper #swiper
+          [navigation]="false"
+          [mousewheel]="true"
+          [slidesPerView]="'auto'"
+          [spaceBetween]="25"
+          [grabCursor]="true"
+          [slideToClickedSlide]="true">
+    <ng-template swiperSlide *ngFor="let content of contents; let i = index;">
+      <div class="slider-contents-card">
+        <div class="slider-contents-image">
+          <img alt=""
+               [src]="content?.imgSrc">
+        </div>
+        <div class="slider-contents-text">
+          <div class="slider-contents-text-title">
+            {{ content.title }}
+          </div>
+          <div class="slider-contents-text-inner">
+            {{ content.content }}
+          </div>
+        </div>
+      </div>
+    </ng-template>
+
+  </swiper>
+</div>

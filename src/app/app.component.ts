@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'angular-randing';
+export class AppComponent implements OnInit, AfterViewInit {
+  title = 'CRACK IT';
+
+  ngAfterViewInit(): void {}
+
+  ngOnInit(): void {}
 }

@@ -1,0 +1,603 @@
+<div class="randing scrollbar"
+     id="randing-wrap">
+
+  <div class="randing-content"
+       id="randing-content"
+       #scrollContent>
+
+    <!-- Desktop Header -->
+    <section class="randing-header-section"
+             id="randing-header-section">
+        <app-randing-header id="header-content"
+                            (clickNavigation)="navigationClick($event)"></app-randing-header>
+    </section>
+
+    <!-- Mobile Header -->
+    <section class="randing-mobile-header-section"
+             id="randing-mobile-header-section">
+      <app-mobile-randing-header
+        (clickNavigation)="navigationClick($event)"></app-mobile-randing-header>
+    </section>
+
+    <!-- Ploting Button -->
+    <section class="floating-btns" id="floating-btns"></section>
+
+    <!-- Main -->
+    <section class="section-01" id="section-01">
+
+      <video class="video-fill desktop-view"
+             id="play-video-sample">
+        <source src="https://s3 영상 링크"
+                type="video/mp4">
+      </video>
+
+      <video class="video-fill mobile-view"
+             id="mobile-main-video">
+
+        <source src="https://s3 영상 링크"
+                type="video/mp4">
+      </video>
+
+      <div class="inner-slider">
+        <app-sliding-text-belt #slidingTextBelt></app-sliding-text-belt>
+      </div>
+    </section>
+
+    <section class="section-02" id="section-02">
+      <div class="background-wrap">
+
+        <div class="background-fill">
+          <img id="bg-fill-image"
+               alt=""
+               src="https://s3 이미지 링크">
+        </div>
+
+        <div class="background-inner-wrap">
+          <img id="img-01" alt="" src="https://s3 이미지 링크">
+          <img id="img-02" alt="" src="https://s3 이미지 링크">
+          <img id="img-03" alt="" src="https://s3 이미지 링크">
+          <img id="img-04" alt="" src="https://s3 이미지 링크">
+          <img id="img-05" alt="" src="https://s3 이미지 링크">
+          <img id="img-07" alt="" src="https://s3 이미지 링크">
+          <img id="img-06" alt="" src="https://s3 이미지 링크">
+        </div>
+      </div>
+
+      <div class="text-wrap">
+        <div class="service">
+          <div class="service-text">
+            WHO WE ARE
+          </div>
+        </div>
+
+        <div class="main-text" id="main-text">크리에이티브</div>
+        <div class="main-text">
+          <span class="outline-text">신진아티스트</span>들을 위한
+        </div>
+        <div class="main-text">
+          성공 플랫폼,
+          <span class="font-italic">크래킷
+            <div class="underscore">
+              <icon-underscore></icon-underscore>
+            </div>
+          </span>
+        </div>
+        <div class="main-text-ending">
+           CRACK IT! AND CREATE NEW ONE
+        </div>
+        <div class="sub-text">
+          멋진 작품을 가진 신진 아티스트들을 직접 매니지먼트하고,<br>
+          성공적인 시장진출을 돕습니다.
+        </div>
+      </div>
+    </section>
+
+    <section class="section-03" id="section-03">
+      <div class="text-wrap-right">
+        <span>신진 아티스트들이</span>
+        <span class="separate-image">
+          <img alt="" src="./assets/images/art/art-003.webp">
+        </span>
+        <span>성공하기 위해</span>
+        <span class="margin-lr-10px icon-dia">
+          <icon-diamond
+            [width]="sec3DiaWidth"
+            [height]="sec3DiaHeight"></icon-diamond>
+        </span>
+        <span>반드시 찾는 서비스</span>
+      </div>
+      <div class="text-wrap-left">
+        <span class="separate-image">
+          <img alt="" src="./assets/images/art/art-001.webp">
+        </span>
+        <span>신진 아티스트들의</span>
+        <span>
+          <icon-cosmos
+            [width]="sec3CosmosWidth"
+            [height]="sec3CosmosHeight"></icon-cosmos>
+        </span>
+        <span>성공을 이룰 수 있는 공간.</span>
+        <span class="separate-image">
+          <img alt="" src="./assets/images/art/art-002.webp">
+        </span>
+      </div>
+
+    </section>
+
+    <section class="section-04" id="section-04">
+      <div class="text-wrap">
+        <div class="text-content">
+          <div class="text-line blank-left">
+            <div class="decorate-dia desktop-view">
+              <icon-diamond [width]="50" [height]="50"></icon-diamond>
+            </div>
+            <div class="decorate-dia mobile-view">
+              <icon-diamond [width]="30" [height]="30"></icon-diamond>
+            </div>
+            크래킷은
+          </div>
+          <div class="text-line">신진 아티스트들이</div>
+          <div class="text-line outline">자유롭게 창작활동을</div>
+          <div class="text-line">할 수 있는 분위기와 환경을 만듭니다.</div>
+        </div>
+      </div>
+
+      <div class="image-wrap">
+        <img src="./assets/images/section_bg/section_04_main_bg_001.webp" alt="">
+      </div>
+
+    </section>
+
+    <section class="section-05" id="section-05">
+      <app-sliding-belt-outline-color></app-sliding-belt-outline-color>
+    </section>
+
+    <section class="section-06" id="section-06">
+
+      <div class="section-wrap">
+        <!-- first -->
+        <div class="first-text-wrap">
+          <div class="first-service">Service</div>
+          <div class="we-prod">We Provide</div>
+          <div class="benefit">Benefit</div>
+          <div class="inner-content">
+            크래킷은 본질에 중점을 가지고 해결 가능한 특별한 가치를 실제로 경험할 수 있는 서비스를 제공하려고 합니다
+          </div>
+          <div class="scrolling">
+            SCROLLING
+            <div class="scrolling-chevron">
+              <icon-chevron-right [width]="17" [height]="17"></icon-chevron-right>
+            </div>
+          </div>
+          <div class="artist-img">
+            <img src="https://s3 이미지 링크"
+                 alt="">
+            <div class="artist-text-box">
+              <div class="artist-text-1">WE PROVIDES</div>
+              <div class="artist-text-2">A special value</div>
+              <div class="artist-text-3">to experience</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second -->
+        <div class="second-text-wrap">
+
+          <div class="box-wrap">
+            <div class="image-area">
+              <img src="https://s3 이미지 링크" alt="">
+            </div>
+
+            <div class="text-area">
+              <div class="text-area-title">
+                BRAND
+              </div>
+              <div class="text-area-content">
+                작품보다 작가의 이야기를 담고자 합니다.
+                작품에 따른 사상화 감정 그리고 철학 등을 소비자와 공유하고 작품에 대한 이해를 보다 가치있게 전달하고자 합니다.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="box-wrap">
+            <div class="image-area">
+              <img src="https://s3 이미지 링크" alt="">
+            </div>
+
+            <div class="text-area">
+              <div class="text-area-title">
+                BENEFIT
+              </div>
+              <div class="text-area-content">
+                신진 아티스트들에게 기획, 브랜드, 생산, 배송, 판매 등 비즈니스를 지원하여 수입창출을 돕고자 합니다.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="box-wrap">
+            <div class="image-area">
+              <img src="s3 이미지 링크"
+                   alt="">
+            </div>
+
+            <div class="text-area">
+              <div class="text-area-title">
+                METAVERSE
+              </div>
+              <div class="text-area-content">
+                국내 뿐만 아니라 해외 소비자들에게도 작가와 작품 가치를 전달 할 수 있도록 가상전시회를 개최합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-06_5" id="section-06_5">
+      <div class="third-text-wrap">
+        <div class="title-banner-bar">
+          <div class="title-banner-bar-content" id="title-banner-content">
+            <ng-container *ngFor="let dummy of '*'.repeat(40).split('*');">
+              <div>#CRACK IT CREW</div>
+
+              <div class="icon-text">
+                <div class="icon-star">
+                  <icon-star-outline></icon-star-outline>
+                </div>
+                <div class="text-content">
+                  ARTIST
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-07" id="section-07">
+      <!-- third -->
+      <div class="third-text-wrap">
+
+        <div class="content">
+          <div class="content-wrap">
+            <div class="content-tag">
+              ARTIST
+            </div>
+            <div class="content-title">
+              <span class="outline">Our&nbsp;</span>
+              <span>Creative Artist</span>
+            </div>
+            <div class="content-content">
+              <span>현재 크래킷과 함께 크리에이티브하고 혁신적인&nbsp;</span>
+              <span>미래 예술시장을 선도해 나갈 신진 작가님들 입니다.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="artist-images">
+
+          <div class="artist-content">
+            <div class="artist-image-wrap">
+              <img alt="" src="./assets/images/section_07/221201/01_GN_STUDIO_221201.webp">
+            </div>
+            <div class="artist-name">
+              ARTIST.GN STUDIO
+            </div>
+          </div>
+
+          <div class="artist-content">
+            <div class="artist-image-wrap">
+              <img alt="" src="./assets/images/section_07/221201/02_Hwang_jae_won_221201.webp">
+            </div>
+            <div class="artist-name">
+              ARTIST.HWANG JAE WON
+            </div>
+          </div>
+
+          <div class="artist-content">
+            <div class="artist-image-wrap">
+              <img alt="" src="./assets/images/section_07/221201/03_SCHREIBEN_221201.webp">
+            </div>
+            <div class="artist-name">
+              ARTIST.SCHREIBEN
+            </div>
+          </div>
+
+          <div class="artist-content">
+            <div class="artist-image-wrap">
+              <img alt="" src="./assets/images/section_07/221201/04_SJ_221201.webp">
+            </div>
+            <div class="artist-name">
+              ARTIST.SJ
+            </div>
+          </div>
+
+          <div class="artist-content">
+            <div class="artist-image-wrap">
+              <img alt="" src="./assets/images/section_07/221201/05_SSIMPLY_221201.webp">
+            </div>
+            <div class="artist-name">
+              ARTIST.SSIMPLY
+            </div>
+          </div>
+
+          <div class="artist-content">
+            <div class="artist-image-wrap">
+              <img alt="" src="./assets/images/section_07/221201/06_백마_221201.webp">
+            </div>
+            <div class="artist-name">
+              ARTIST.백마
+            </div>
+          </div>
+
+          <div class="artist-content">
+            <div class="artist-image-wrap">
+              <img alt="" src="./assets/images/section_07/221201/07_쫄자카_221201.webp">
+            </div>
+            <div class="artist-name">
+              ARTIST.쫄자카
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-08" id="section-08">
+
+      <div class="text-content">
+        <div class="service">HISTORY</div>
+        <div class="service-title">
+          <span class="outline">Our</span>
+          <span class="square"></span>
+          History
+        </div>
+        <div class="service-content">
+          <span>크래킷은 과거부터 현재까지&nbsp;</span>
+          <span>크래킷 크루들과 함께 걸어가고 있습니다.</span>
+        </div>
+      </div>
+
+      <div class="accordion-wrap">
+
+        <!-- 2020 -->
+        <div class="accordion-panel">
+          <div class="accordion-title" (click)="toggleMore('isMore1')">
+            <div class="title-name">
+              <div class="decorate-slash">/</div>2020
+            </div>
+            <div class="title-action" (click)="toggleMore('isMore1')">
+              <icon-plus [dismiss]="isMore1" (click)="toggleMore('isMore1')"></icon-plus>
+            </div>
+          </div>
+          <div class="company-histories" [ngClass]="isMore1 ? 'show' : ''">
+            <ul>
+              <li>
+                <div class="history-year">20. 09</div>
+                <div class="history-content">개인사업자 설립</div>
+              </li>
+              <li>
+                <div class="history-year">20. 11</div>
+                <div class="history-content">월트디즈니 & 롯데월드몰 주최 MARVEL 팝업스토어 참가 및 작품 전시</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="accordion-panel">
+          <div class="accordion-title" (click)="toggleMore('isMore2')">
+            <div class="title-name">
+              <div class="decorate-slash">/</div>2021
+            </div>
+            <div class="title-action" (click)="toggleMore('isMore2')">
+              <icon-plus [dismiss]="isMore2" (click)="toggleMore('isMore2')"></icon-plus>
+            </div>
+          </div>
+          <div class="company-histories" [ngClass]="isMore2 ? 'show' : ''">
+            <ul>
+              <li>
+                <div class="history-year">21. 09</div>
+                <div class="history-content">주식회사 법인 설립</div>
+              </li>
+              <li>
+                <div class="history-year">22. 11</div>
+                <div class="history-content">한국콘텐츠진흥원 기획보증 선정</div>
+              </li>
+              <li>
+                <div class="history-year">21. 11</div>
+                <div class="history-content">지역역창조경제혁신센터 투자</div>
+              </li>
+              <li>
+                <div class="history-year">21. 11</div>
+                <div class="history-content">와이즈유 동남권 IR 1위 수상 (대학교 총장상)</div>
+              </li>
+              <li>
+                <div class="history-year">21. 11</div>
+                <div class="history-content">I-CORN IR 데모데이 우수상 (지역역창조경제형신센터상)</div>
+              </li>
+              <li>
+                <div class="history-year">21. 12</div>
+                <div class="history-content">콘텐츠 서바이벌 프로그램 1위 수상(한국콘텐츠 진흥원 주관)</div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="accordion-panel border-bottom-gray">
+          <div class="accordion-title" (click)="toggleMore('isMore3')">
+            <div class="title-name">
+              <div class="decorate-slash">/</div>2022
+            </div>
+            <div class="title-action" (click)="toggleMore('isMore3')">
+              <icon-plus [dismiss]="isMore3" (click)="toggleMore('isMore3')"></icon-plus>
+            </div>
+          </div>
+          <div class="company-histories" [ngClass]="isMore3 ? 'show' : ''">
+            <ul>
+              <li>
+                <div class="history-year">22. 05</div>
+                <div class="history-content">부산대학교 대동제. 팝걸쳐 조형 작가 초청 팝업 전시 기획 및 운영</div>
+              </li>
+              <li>
+                <div class="history-year">22. 05</div>
+                <div class="history-content">컬렉팅 서비스 키핑 MVP 서비스 운영</div>
+              </li>
+              <li>
+                <div class="history-year">22. 06</div>
+                <div class="history-content">커스텀 아티스트 소개 웹 매거진 & 인스타그램 컨텐츠 연재</div>
+              </li>
+              <li>
+                <div class="history-year">22. 07</div>
+                <div class="history-content">K-GLOBAL 엑셀러레이터 최종선정 (와이앤아처)</div>
+              </li>
+              <li>
+                <div class="history-year">22. 07</div>
+                <div class="history-content">창업투자경진대회 'B-스타트업 챌린지' 최종 본선 진출</div>
+              </li>
+              <li>
+                <div class="history-year">22. 08</div>
+                <div class="history-content">서울 팝콘 팝 컬쳐 조형 아트 & 프리랜서 아티스트 팝업 전시 기획 및 운영</div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section-09" id="section-09">
+      <div class="sliding-banner-wrap">
+        <div class="sliding-banner-bar" id="sliding-banner-bar">
+          <ng-container *ngFor="let dummy of '*'.repeat(20).split('*');">
+            <div>#CRACK IT CREW</div>
+
+            <div class="icon-text">
+              <div class="icon-star">
+                <icon-star-outline [pathFill]="'white'"></icon-star-outline>
+              </div>
+              <div class="text-content">
+                ARTIST
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-10" id="section-10">
+      <div class="content-wrap">
+        <div class="image-box">
+          <video id="statue-video">
+            <source src="https://s3 영상 링크" type="video/mp4">
+          </video>
+        </div>
+        <div class="information-content">
+          <div class="service">CONTACT</div>
+          <div class="service-title">
+            <span class="outline">We Are&nbsp;</span>
+            <span>Looking For</span>
+          </div>
+          <div class="service-content">
+            크래킷과 함께 크리에이티브하고 혁신적으로 미래 예술 시장을 선도해나갈 신진 작가님들을 기다리고 있습니다.
+          </div>
+
+          <div class="recruit-wrap">
+            <div class="recruit-content">
+              <div class="recruit-title">
+                <div class="decorate-slash">/</div>
+                모집 대상
+              </div>
+              <ul>
+                <li>대학교를 졸업하고 아티스트 및 작가활동을 시작하는 20, 30대 영세&신생 작가</li>
+                <li>현재 프리랜서로 활동하고 있는 신진 작가</li>
+                <li>부가 수익 창출을 위해 부업 및 취미로 활동하는 프리랜서 작가</li>
+                <li>자본금이 부족한 영세 아티스트</li>
+              </ul>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="recruit-content">
+              <div class="recruit-title">
+                <div class="decorate-slash">/</div>
+                지원방법
+              </div>
+              <ul>
+                <li>
+                  제출 서류
+                  <ul>
+                    <li>참가신청서(지정 양식)</li>
+                    <li>본인 작품 포트폴리오 : 자유양식, 시각자료</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>필수 제출 서류 2가지를 꼭 첨부하여&nbsp;</span>
+                  <span>cs@company.com로 이메일 접수</span>
+                </li>
+                <li>서류 심사 결과는 개별 회신 예정</li>
+              </ul>
+
+              <a class="recruit-apply-download"
+                 href="https://신청서 링크"
+                 target="_blank"
+                 download>
+                참가신청서 다운로드
+                <div class="download-icon">
+                  <icon-download-btn></icon-download-btn>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-11" id="section-11">
+      <div class="left-side-wrap">
+        <div class="first-txt">ARE YOU</div>
+        <div class="second-txt">READY?</div>
+        <div class="copyright">2022 © COMPANY.ALL RIGHTS RESERVED.</div>
+      </div>
+
+      <div class="right-side-wrap">
+        <div class="introduce">
+          <div class="title">Company</div>
+          <div class="content">주식회사 COMPANY</div>
+          <div class="content">사업자번호 : 000-00-0000</div>
+        </div>
+        <div class="introduce">
+          <div class="title">E-mail</div>
+          <div class="content">cs@company.com</div>
+        </div>
+        <div class="btn-wrap">
+          <div>
+            <div class="cursor-pointer">
+              <icon-facebook></icon-facebook>
+            </div>
+          </div>
+          <div>
+            <div class="cursor-pointer"
+                 (click)="moveExternalUrl('https://instagram.com/')">
+              <icon-instargram></icon-instargram>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">2022 © COMPANY.ALL RIGHTS RESERVED.</div>
+      </div>
+    </section>
+
+  </div>
+</div>

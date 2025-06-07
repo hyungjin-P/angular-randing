@@ -1,0 +1,505 @@
+<div class="randing scrollbar"
+     id="randing-wrap-m">
+
+  <div class="randing-content lattice-line"
+       id="mobile-randing-content">
+
+    <!-- mobile top header -->
+    <section class="randing-mobile-header-section"
+             id="randing-mobile-header-section">
+      <app-mobile-randing-header
+        (clickNavigation)="navigationClick($event)"></app-mobile-randing-header>
+    </section>
+
+    <!-- section -->
+    <section class="section-01"
+             id="section-01-m">
+      <div class="inner-title">
+        <div class="title-text">
+          <div class="twinkle-wrap">
+            <img class="twinkle-large"
+                 alt=""
+                 src="./assets/images/twinkle_svg/twinkle_large.svg">
+            <img class="twinkle-small"
+                 alt=""
+                 src="./assets/images/twinkle_svg/twinkle_small.svg">
+          </div>
+
+          <div class="title-text-top">CRACK IT!</div>
+          <div class="title-text-bottom">CRACK IT!</div>
+        </div>
+      </div>
+      <div class="inner-text">CREATE NEW ONE</div>
+
+      <div class="inner-slider">
+        <app-sliding-text-belt
+          #slidingTextBelt
+          [repeat]="10"></app-sliding-text-belt>
+      </div>
+    </section>
+
+    <section class="section-02"
+             id="section-02-m">
+      <div class="background-wrap">
+        <div class="background-fill">
+          <img id="bg-fill-image"
+               alt=""
+               src="https://s3 이미지 링크">
+        </div>
+      </div>
+
+      <div class="text-wrap">
+        <div class="service">
+          <div class="service-text">
+            WHO WE ARE
+          </div>
+        </div>
+
+        <div class="main-text" id="main-text">크리에이티브</div>
+        <div class="main-text">
+          <span class="outline-text">신진아티스트</span>들을 위한
+        </div>
+        <div class="main-text">
+          성공 플랫폼,
+          <span class="font-italic">크래킷
+            <div class="underscore">
+              <icon-underscore></icon-underscore>
+            </div>
+          </span>
+        </div>
+        <div class="main-text-ending">
+          CRACK IT! AND CREATE NEW ONE
+        </div>
+        <div class="sub-text">
+          멋진 작품을 가진 신진 아티스트들을 직접 매니지먼트하고,<br>
+          성공적인 시장진출을 돕습니다.
+        </div>
+      </div>
+    </section>
+
+    <section class="section-03" id="section-03-m">
+      <div class="text-wrap-right">
+        <span>신진 아티스트들이</span>
+        <span class="separate-image">
+          <img alt="" src="./assets/images/art/art-003.webp">
+        </span>
+        <span>성공하기 위해</span>
+        <span class="margin-lr-10px icon-dia">
+          <icon-diamond
+            [width]="50"
+            [height]="50"></icon-diamond>
+        </span>
+        <span>반드시 찾는 서비스</span>
+      </div>
+      <div class="text-wrap-left">
+        <span class="separate-image">
+          <img alt="" src="./assets/images/art/art-001.webp">
+        </span>
+        <span>신진 아티스트들의</span>
+        <span>
+          <icon-cosmos
+            [width]="35"
+            [height]="35"></icon-cosmos>
+        </span>
+        <span>성공을 이룰 수 있는 공간.</span>
+        <span class="separate-image">
+          <img alt="" src="./assets/images/art/art-002.webp">
+        </span>
+      </div>
+    </section>
+
+    <section class="section-04" id="section-04-m">
+      <div class="text-wrap">
+        <div class="text-content">
+          <div class="text-line blank-left">
+            <div class="decorate-dia mobile-view">
+              <icon-diamond [width]="30" [height]="30"></icon-diamond>
+            </div>
+            크래킷은
+          </div>
+          <div class="text-line">신진 아티스트들이</div>
+          <div class="text-line outline">자유롭게 창작활동을</div>
+          <div class="text-line">할 수 있는 분위기와 환경을 만듭니다.</div>
+        </div>
+      </div>
+
+      <div class="image-wrap">
+        <img src="./assets/images/section_bg/section_04_main_bg_001.webp" alt="">
+      </div>
+    </section>
+
+    <section class="section-05" id="section-05">
+      <app-sliding-belt-outline-color></app-sliding-belt-outline-color>
+    </section>
+
+    <section class="section-06" id="section-06-m">
+      <div class="section-wrap">
+        <!-- first -->
+        <div class="first-text-wrap">
+          <div class="first-service">Service</div>
+          <div class="we-prod">We Provide</div>
+          <div class="benefit">Benefit</div>
+          <div class="inner-content">
+            크래킷은 본질에 중점을 가지고 해결 가능한 특별한 가치를 실제로 경험할 수 있는 서비스를 제공하려고 합니다
+          </div>
+
+          <div class="artist-bg">
+            <div class="half-bg"></div>
+            <img alt="" src="./assets/images/section_bg/section_06_mobile_bg.webp">
+          </div>
+
+          <div class="artist-bg-deco">
+            <div class="first-deco">WE PROVIDES</div>
+            <div class="second-deco">A special value to experience.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-06-slider">
+      <app-service-strategy></app-service-strategy>
+    </section>
+
+    <section class="section-06_5" id="section-06_5-m">
+      <div class="third-text-wrap">
+        <div class="title-banner-bar">
+
+          <div class="marquee-wrap">
+            <div class="marquee-list">
+              <div class="marquee-item italic">#CRACK IT CREW</div>
+              <div class="marquee-item outline">
+                <span class="icon-margin">
+                  <icon-star-outline-small></icon-star-outline-small>
+                </span>ARTIST
+              </div>
+              <div class="marquee-item italic">#CRACK IT CREW</div>
+              <div class="marquee-item outline">
+                <span class="icon-margin">
+                  <icon-star-outline-small></icon-star-outline-small>
+                </span>ARTIST
+              </div>
+
+            </div>
+            <div class="marquee-list">
+              <div class="marquee-item italic">#CRACK IT CREW</div>
+              <div class="marquee-item outline">
+                <span class="icon-margin">
+                  <icon-star-outline-small></icon-star-outline-small>
+                </span>ARTIST
+              </div>
+              <div class="marquee-item italic">#CRACK IT CREW</div>
+              <div class="marquee-item outline">
+                <span class="icon-margin">
+                  <icon-star-outline-small></icon-star-outline-small>
+                </span>ARTIST
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-07" id="section-07-m">
+      <!-- third -->
+      <div class="third-text-wrap">
+        <div class="content">
+          <div class="content-wrap">
+            <div class="content-tag">
+              ARTIST
+            </div>
+            <div class="content-title">
+              <span class="outline">Our&nbsp;</span>
+              <span>Creative Artist</span>
+            </div>
+            <div class="content-content">
+              <span>현재 크래킷과 함께 크리에이티브하고 혁신적인&nbsp;</span>
+              <span>미래 예술시장을 선도해 나갈 신진 작가님들 입니다.</span>
+            </div>
+          </div>
+        </div>
+        <div class="artist-images">
+          <div class="artist-content">
+            <app-artist-slider></app-artist-slider>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-08" id="section-08-m">
+
+      <div class="text-content">
+        <div class="service">HISTORY</div>
+        <div class="service-title">
+          <span class="outline">Our</span>
+          <span class="square"></span>
+          History
+        </div>
+        <div class="service-content">
+          <span>크래킷은 과거부터 현재까지&nbsp;</span>
+          <span>크래킷 크루들과 함께 걸어가고 있습니다.</span>
+        </div>
+      </div>
+
+      <div class="accordion-wrap">
+
+        <!-- 2020 -->
+        <div class="accordion-panel">
+          <div class="accordion-title" (click)="toggleMore('isMore1')">
+            <div class="title-name">
+              <div class="decorate-slash">/</div>
+              2020
+            </div>
+            <div class="title-action" (click)="toggleMore('isMore1')">
+              <icon-plus [dismiss]="isMore1" (click)="toggleMore('isMore1')"></icon-plus>
+            </div>
+          </div>
+          <div class="company-histories" [ngClass]="isMore1 ? 'show' : ''">
+            <ul>
+              <li>
+                <div class="history-year">20. 09</div>
+                <div class="history-content">개인사업자 설립</div>
+              </li>
+              <li>
+                <div class="history-year">20. 11</div>
+                <div class="history-content">월트디즈니 & 롯데월드몰 주최 MARVEL 팝업스토어 참가 및 작품 전시</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="accordion-panel">
+          <div class="accordion-title" (click)="toggleMore('isMore2')">
+            <div class="title-name">
+              <div class="decorate-slash">/</div>
+              2021
+            </div>
+            <div class="title-action" (click)="toggleMore('isMore2')">
+              <icon-plus [dismiss]="isMore2" (click)="toggleMore('isMore2')"></icon-plus>
+            </div>
+          </div>
+          <div class="company-histories" [ngClass]="isMore2 ? 'show' : ''">
+            <ul>
+              <li>
+                <div class="history-year">21. 09</div>
+                <div class="history-content">주식회사 법인 설립</div>
+              </li>
+              <li>
+                <div class="history-year">22. 11</div>
+                <div class="history-content">한국콘텐츠진흥원 기획보증 선정</div>
+              </li>
+              <li>
+                <div class="history-year">21. 11</div>
+                <div class="history-content">지역역창조경제혁신센터 투자</div>
+              </li>
+              <li>
+                <div class="history-year">21. 11</div>
+                <div class="history-content">와이즈유 동남권 IR 1위 수상 (대학교 총장상)</div>
+              </li>
+              <li>
+                <div class="history-year">21. 11</div>
+                <div class="history-content">I-CORN IR 데모데이 우수상 (지역역창조경제형신센터상)</div>
+              </li>
+              <li>
+                <div class="history-year">21. 12</div>
+                <div class="history-content">콘텐츠 서바이벌 프로그램 1위 수상(한국콘텐츠 진흥원 주관)</div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="accordion-panel border-bottom-gray">
+          <div class="accordion-title" (click)="toggleMore('isMore3')">
+            <div class="title-name">
+              <div class="decorate-slash">/</div>
+              2022
+            </div>
+            <div class="title-action" (click)="toggleMore('isMore3')">
+              <icon-plus [dismiss]="isMore3" (click)="toggleMore('isMore3')"></icon-plus>
+            </div>
+          </div>
+          <div class="company-histories" [ngClass]="isMore3 ? 'show' : ''">
+            <ul>
+              <li>
+                <div class="history-year">22. 05</div>
+                <div class="history-content">부산대학교 대동제. 팝걸쳐 조형 작가 초청 팝업 전시 기획 및 운영</div>
+              </li>
+              <li>
+                <div class="history-year">22. 05</div>
+                <div class="history-content">컬렉팅 서비스 키핑 MVP 서비스 운영</div>
+              </li>
+              <li>
+                <div class="history-year">22. 06</div>
+                <div class="history-content">커스텀 아티스트 소개 웹 매거진 & 인스타그램 컨텐츠 연재</div>
+              </li>
+              <li>
+                <div class="history-year">22. 07</div>
+                <div class="history-content">K-GLOBAL 엑셀러레이터 최종선정 (와이앤아처)</div>
+              </li>
+              <li>
+                <div class="history-year">22. 07</div>
+                <div class="history-content">창업투자경진대회 'B-스타트업 챌린지' 최종 본선 진출</div>
+              </li>
+              <li>
+                <div class="history-year">22. 08</div>
+                <div class="history-content">서울 팝콘 팝 컬쳐 조형 아트 & 프리랜서 아티스트 팝업 전시 기획 및 운영</div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section-09" id="section-09-m">
+      <div class="third-text-wrap">
+        <div class="title-banner-bar">
+
+          <div class="marquee-wrap">
+            <div class="marquee-list">
+              <div class="marquee-item">#CONTACT US</div>
+              <div class="marquee-item outline">
+                <span class="icon-margin">
+                  <icon-star-outline-small [pathFill]="'white'"></icon-star-outline-small>
+                </span>CRACK IT!
+              </div>
+              <div class="marquee-item">#CONTACT US</div>
+              <div class="marquee-item outline">
+                <span class="icon-margin">
+                  <icon-star-outline-small [pathFill]="'white'"></icon-star-outline-small>
+                </span>CRACK IT!
+              </div>
+
+            </div>
+            <div class="marquee-list">
+              <div class="marquee-item">#CONTACT US</div>
+              <div class="marquee-item outline">
+                <span class="icon-margin">
+                  <icon-star-outline-small [pathFill]="'white'"></icon-star-outline-small>
+                </span>CRACK IT!
+              </div>
+              <div class="marquee-item">#CONTACT US</div>
+              <div class="marquee-item outline">
+                <span class="icon-margin">
+                  <icon-star-outline-small [pathFill]="'white'"></icon-star-outline-small>
+                </span>CRACK IT!
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-10" id="section-10-m">
+      <div class="content-wrap">
+        <div class="information-content">
+          <div class="service">CONTACT</div>
+          <div class="service-title">
+            <span class="outline">We Are&nbsp;</span>
+            <span>Looking For</span>
+          </div>
+          <div class="service-content">
+            크래킷과 함께 크리에이티브하고 혁신적으로 미래 예술 시장을 선도해 나갈 신진 작가님들을 기다리고 있습니다.
+          </div>
+
+          <div class="recruit-wrap">
+            <div class="recruit-content">
+              <div class="recruit-title">
+                <div class="decorate-slash">/</div>
+                모집 대상
+              </div>
+              <ul>
+                <li>대학교를 졸업하고 아티스트 및 작가활동을 시작하는 20, 30대 영세&신생 작가</li>
+                <li>현재 프리랜서로 활동하고 있는 신진 작가</li>
+                <li>부가 수익 창출을 위해 부업 및 취미로 활동하는 프리랜서 작가</li>
+                <li>자본금이 부족한 영세 아티스트</li>
+              </ul>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="recruit-content">
+              <div class="recruit-title">
+                <div class="decorate-slash">/</div>
+                지원방법
+              </div>
+              <ul>
+                <li>
+                  제출 서류
+                  <ul>
+                    <li>참가신청서(지정 양식)</li>
+                    <li>본인 작품 포트폴리오 : 자유양식, 시각자료</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>필수 제출 서류 2가지를 꼭 첨부하여&nbsp;</span>
+                  <div style="display: inline-block;">
+                    <div style="text-decoration: underline; display: inline-block">cs@company.com</div>
+                    로 이메일 접수
+                  </div>
+                </li>
+                <li>서류 심사 결과는 개별 회신 예정</li>
+              </ul>
+
+              <a class="recruit-apply-download"
+                 href="https://신청서 링크크"
+                 target="_blank"
+                 download>
+                참가신청서 다운로드
+                <div class="download-icon">
+                  <icon-download-btn-small></icon-download-btn-small>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-11" id="section-11-m">
+      <div class="left-side-wrap">
+        <div class="first-txt">ARE YOU</div>
+        <div class="second-txt">READY?</div>
+        <div class="copyright">2022 © COMPANY.ALL RIGHTS RESERVED.</div>
+      </div>
+
+      <div class="right-side-wrap">
+        <div class="introduce">
+          <div class="title">Company</div>
+          <div class="content">주식회사 COMPANY</div>
+          <div class="content">사업자번호 : 000-00-00000</div>
+        </div>
+        <div class="introduce">
+          <div class="title">E-mail</div>
+          <div class="content">cs@company.com</div>
+        </div>
+        <div class="btn-wrap">
+          <div>
+            <div class="cursor-pointer">
+              <icon-facebook></icon-facebook>
+            </div>
+          </div>
+          <div>
+            <div class="cursor-pointer"
+                 (click)="moveExternalUrl('https://instagram.com/')">
+              <icon-instargram></icon-instargram>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">2022 © COMPANY.ALL RIGHTS RESERVED.</div>
+      </div>
+    </section>
+
+  </div>
+</div>

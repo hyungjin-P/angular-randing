@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+@import './assets/css/common';
+
+html, body, section, div {
+  margin: 0;
+  padding: 0;
+  image-rendering: crisp-edges;
+}
+
+:root {
+  --yellow01: #ffff00;
+  --green01: #00fd47;
+  --blue01: #0123fe;
+  --hot-pink: #f523fa;
+  --white01: #fff;
+  --gray01: #cccccc;
+  --gray02: #999999;
+  --gray03: #777777;
+  --gray04: #333333;
+  --black01: #000;
+}
+
+
+/* 스크롤바 너비 */
+.scrollbar {
+  &::-webkit-scrollbar {
+    overflow: auto;
+    visibility: hidden !important;
+    width: 5px;
+    cursor: pointer;
+    background: transparent;
+    /* scrollbar */
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 0, 0.3);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* smooth scrollbar */
+.scrollbar-track {
+  background-color: rgba(0, 0, 0, 0) !important;
+
+  &.scrollbar-track-y {
+    width: 10px;
+    cursor: pointer;
+  }
+
+  .scrollbar-thumb {
+    background-color: rgba(255, 240, 0, 1);
+    width: 10px;
+    cursor: pointer;
+    border-radius: 0;
+  }
+}
+
+.margin-lr-10px {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.padding-b-20px {
+  padding-bottom: 20px;
+}
+
+.margin-b-20px {
+  margin-bottom: 20px;
+}
+
+/* right side scroller button */
+@media (max-width: 1399.98px) {
+  /* smooth scrollbar */
+  .scrollbar-track {
+    display: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    &.scrollbar-track-y {
+      display: none;
+      width: 0;
+      cursor: pointer;
+    }
+
+    .scrollbar-thumb {
+      display: none;
+      background-color: rgba(255, 240, 0, 1);
+      width: 0;
+      cursor: pointer;
+      border-radius: 0;
+    }
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+

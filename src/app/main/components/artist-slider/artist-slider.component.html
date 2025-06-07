@@ -1,0 +1,23 @@
+<div class="artist-slider">
+  <swiper #swiper
+          [navigation]="false"
+          [mousewheel]="true"
+          [slidesPerView]="'auto'"
+          [grabCursor]="true"
+          [slideToClickedSlide]="true">
+
+    <ng-template swiperSlide *ngFor="let content of contents; let i = index;">
+      <div class="artist-contents" [ngClass]="i === 0 ? 'border-left-1px-solid' : ''">
+        <div class="image-wrap">
+          <img alt="" [src]="content.imgSrc">
+        </div>
+        <div class="artist-nickname">
+          <span>{{content.nickName}}</span>
+        </div>
+      </div>
+    </ng-template>
+
+
+  </swiper>
+
+</div>

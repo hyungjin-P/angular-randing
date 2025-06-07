@@ -1,0 +1,24 @@
+.lattice-line {
+  background-size: 90px, 90px, 90px 90px, 90px 90px;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255, 0.02) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255, 0.02) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255, 0.02) 1px, transparent 1px);
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.color-yellow {
+  color: var(--yellow01);
+}
+
+.border-left-1px-solid {
+  border-left: 1px solid black;
+}
+
+.border-top-1px-solid {
+  border-top: 1px solid black;
+}

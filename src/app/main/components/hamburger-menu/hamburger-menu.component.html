@@ -1,0 +1,13 @@
+<div class="burger-menu-wrap">
+  <input class="burger-check"
+         type="checkbox"
+         id="burger-check"
+         [ngClass]="open ? 'burger-check-on' : ''"
+         [value]="open">
+  <label class="burger-icon"
+         for="burger-check"
+         [ngClass]="open ? 'bg-yellow' : ''"
+         (click)="toggleOpenStat()">
+    <span class="burger-sticks"></span>
+  </label>
+</div>

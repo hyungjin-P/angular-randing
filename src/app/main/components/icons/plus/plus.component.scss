@@ -1,0 +1,21 @@
+@import 'src/assets/mixin/decorate';
+
+.button-wrap {
+  position: relative;
+
+  .plus-button {
+    @include rotatable-button(32px);
+  }
+
+}
+
+@media (max-width: 1023.98px) {
+  .button-wrap {
+    position: relative;
+
+    .plus-button {
+      @include rotatable-button(20px);
+    }
+
+  }
+}

@@ -1,0 +1,26 @@
+@import 'src/assets/mixin/text-styles';
+
+.cover {
+  width: 100vw;
+  margin-bottom: 10rem;
+  display: flex;
+  height: 95px;
+
+  &:nth-child(1) {
+    width: 100%;
+    margin-top: 10vh;
+    transform: rotate(-1.27deg);
+    background-color: var(--yellow01);
+    height: 60px;
+
+    div {
+      display: flex;
+      align-items: center;
+      padding: 26px 0;
+      @include textStyleMontserrat(26px, 800);
+      font-style: italic;
+    }
+
+  }
+}
+

@@ -1,0 +1,32 @@
+@import 'src/assets/mixin/text-styles';
+
+.body-content__rollig-text {
+  white-space: nowrap;
+  @include textStyleMontserrat(70px, 800);
+
+  .rolling-text__text {
+    display: inline-block;
+    color: rgba(0, 0, 0, 1);
+    text-shadow: -1px -1px 0 var(--white01), 1px -1px 0 var(--white01), -1px 1px 0 var(--white01), 1px 1px 0 var(--white01);
+
+    svg {
+      margin-bottom: 15px;
+    }
+
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 1439.98px) {
+  .body-content__rollig-text {
+    white-space: nowrap;
+    @include textStyleMontserrat(60px, 800);
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .body-content__rollig-text {
+    white-space: nowrap;
+    @include textStyleMontserrat(40px, 800);
+  }
+}

@@ -1,0 +1,46 @@
+.svg-color {
+
+  &.yellow {
+    svg {
+      path {
+        fill: rgb(42,169,224);
+      }
+      //fill: #FFFF00;
+
+    }
+  }
+
+  &.blue {
+    svg {
+      //fill: #0123FF;
+      fill: rgb(42,169,224);
+
+      path {
+        fill: rgb(42,169,224);
+      }
+    }
+  }
+
+  &.green {
+    svg {
+      //fill: #00FF47;
+      fill: rgb(42,169,224);
+
+      path {
+        fill: rgb(42,169,224);
+      }
+    }
+  }
+
+  &.pink {
+    svg {
+      //fill: #F723FB;
+      fill: rgb(42,169,224);
+
+      path {
+        fill: rgb(42,169,224);
+      }
+
+    }
+  }
+}

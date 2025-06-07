@@ -1,0 +1,20 @@
+
+@mixin d-flex($flex-direction, $align-items, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin d-inline-flex($flex-direction, $align-items, $justify-content) {
+  display: inline-flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin p-absolute($axis-1, $axis-1-value, $axis-2, $axis-2-value) {
+  position: absolute;
+  $axis-1: $axis-1-value;
+  $axis-2: $axis-2-value;
+}

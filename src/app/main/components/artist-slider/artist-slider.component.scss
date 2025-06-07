@@ -1,0 +1,39 @@
+@import '~swiper/swiper-bundle.min.css';
+@import 'src/assets/mixin/text-styles';
+
+.artist-slider {
+
+  .swiper-slide {
+    width: calc(100vw - (20px + 35px));
+    max-width: 300px;
+
+    .artist-contents {
+      border-right: 1px solid var(--black01);
+      border-top: 1px solid var(--black01);
+
+      .image-wrap {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        width: calc(100vw - (20px + 35px));
+        height: calc(100vw - (20px + 35px));
+        max-width: 300px;
+        max-height: 300px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .artist-nickname {
+        @include textStyleMontserrat(16px, 500);
+        line-height: 40px;
+        color: var(--black01);
+        padding-left: 20px;
+        border-bottom: 1px solid var(--black01);
+      }
+    }
+  }
+
+}

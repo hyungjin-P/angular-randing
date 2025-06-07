@@ -1,0 +1,27 @@
+<div class="mobile-header-wrap" [ngClass]="burgerOpen ? 'bg-fill' : ''">
+
+  <div class="header-bar">
+    <div class="title"
+         (click)="clickNavigationEvent('section-01')">CRACK IT</div>
+    <div class="nav-button">
+      <app-hamburger-menu #burgerMenu
+                          [open]="burgerOpen"
+                          (isOpen)="burgerOpenStatus($event)"
+                          (isClose)="burgerOpenStatus($event)"></app-hamburger-menu>
+    </div>
+  </div>
+
+  <div class="header-content" [ngClass]="burgerOpen ? 'open' : ''">
+    <div class="nav-content">
+      <div (click)="clickNavigationEvent('section-01')">HOME</div>
+      <div (click)="clickNavigationEvent('section-02')">WE ARE </div>
+      <div (click)="clickNavigationEvent('section-06')">SERVICE</div>
+      <div (click)="clickNavigationEvent('section-07')">ARTIST</div>
+      <div (click)="clickNavigationEvent('section-08')">HISTORY</div>
+      <div (click)="clickNavigationEvent('section-09')">CONTACT</div>
+    </div>
+    <div class="copyright">2022&copy; CRACK IT. All Rights Reserved.</div>
+
+  </div>
+
+</div>

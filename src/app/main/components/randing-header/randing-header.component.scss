@@ -1,0 +1,73 @@
+@import 'src/assets/mixin/text-styles';
+
+.randing-header {
+  display: flex;
+  width: 100%;
+  color: white;
+  height: 50px;
+  background-color: transparent;
+  //background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(217, 217, 217, 0) 100%);
+
+  .title-wrap {
+    display: flex;
+
+    .title {
+      padding-left: 20px;
+      color: white;
+      width: 180px;
+      @include textStyleMontserrat(24px, 700);
+      text-align: left;
+      font-style: italic;
+      margin-top: 8px;
+    }
+
+    .hamburger-menu {
+      display: none;
+    }
+  }
+
+  .hamburger-menu-content {
+    display: none;
+  }
+
+  .services {
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+    padding-right: 0;
+    @include textStyleMontserrat(16px, 600);
+
+    ul {
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+
+    ul, li {
+      list-style-type: none;
+      float: left;
+    }
+
+    li {
+      padding-right: 36px;
+
+      a {
+        color: #cccccc;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1443.98px) {
+  .randing-header {
+    .services {
+      padding-right: 0;
+      @include textStyleMontserrat(15px, 600);
+      li {
+        padding-right: 20px;
+      }
+    }
+  }
+}
